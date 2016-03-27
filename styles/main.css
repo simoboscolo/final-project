@@ -1,0 +1,149 @@
+@media all and (min-width: 1025px) {
+
+	body {
+		margin: 0 auto;
+		color: white;
+		font-family: Helvetica;
+		font-weight: lighter;
+	}
+
+	div.top {
+		position: relative;
+		overflow: hidden;
+		height: 700px;
+	}
+
+	img.topPic {
+		width: 100%;
+		position: absolute;
+	}
+
+	div.color {
+		background-color: rgba( 0, 0, 0, 0.5);
+		width: 100%;
+		height: 100%;
+		top: 0;
+		position: absolute; 
+	}
+
+	h1 {
+		font-family: 'Slabo 27px', serif;
+		font-size: 60px;
+		text-align: center;
+		margin-top: 100px;
+	}
+
+	h2 {
+		font-family: 'Slabo 27px', serif;
+		text-align: center;
+		font-size: 22px;
+		margin-bottom: 40px;
+	}
+
+	p.text {
+		width: 20%;
+		margin-top: 30px;
+		margin-left: 38%;
+		text-align: justify;
+		line-height: 25px;
+		border: 3px solid #fff;
+		padding: 25px 25px;
+	}
+
+/*	hr {
+		width: 200px;
+	}*/
+
+	div.menuEl {
+		float: left;
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		position: relative;
+		width: 50%;
+		height: 350px;
+	}
+
+	div.menuEl img {
+		width: 100%;
+		margin-top: -120px; 
+	}
+
+	div.hover {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		opacity: 0;
+	}
+
+	div.hover:hover {
+		opacity: 1;
+		transition: 0.8s ease;
+	}
+
+	div.black {
+		min-width: 100%;
+		height: 350px;
+		background-color: rgba(0, 0, 0, 0.65);
+		position: absolute;
+		-webkit-backdrop-filter: saturate(180%) blur(20px);
+		backdrop-filter: saturate(180%) blur(20px);
+	}
+
+	div.hoverText {
+		position: absolute;
+		width: 100%;
+		z-index: 1;
+	}
+
+	div.hoverText h1 {
+		padding: 5px 10px;
+		margin: 125px 30px 0 0;
+		float: right;
+		border: 3px solid #fff;
+	}
+
+	/* days */
+	
+	div.day {
+		background-color: #fff;
+		width: 96%;
+		height: 750px;
+		position: fixed;
+		top: 25px;
+		left: 2%;
+		right: 2%;
+		color: #000;
+		box-shadow: 0px 0px 120px #000;
+		z-index: 999999;
+	}
+
+	div.dayPic {
+		z-index: 999;
+		float: left;
+		width: 600px;
+		height: 750px;
+		overflow: hidden;
+	}
+
+	div.dayPic img {
+		height: 100%;
+	}
+
+	div.dayText {
+		margin-left: 40px;
+		max-width: 700px;
+		float: left;
+	}
+
+	h1.h1Day {
+		margin-top: 20px;
+		margin-bottom: 10px;
+		text-align: left;
+	}
+
+	p.back {
+		float: left;
+	}
+
+} 
