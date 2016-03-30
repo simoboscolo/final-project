@@ -26,18 +26,18 @@
 		position: absolute; 
 	}
 
-	h1 {
-		font-family: 'Slabo 27px', serif;
-		font-size: 60px;
-		text-align: center;
-		margin-top: 100px;
+	img.bike {
+		width: 10%;
+		margin-left: 45%;
+		margin-top: 50px;
 	}
 
-	h2 {
+	h1 {
 		font-family: 'Slabo 27px', serif;
+		font-size: 70px;
 		text-align: center;
-		font-size: 22px;
-		margin-bottom: 40px;
+		margin-top: 30px;
+		margin-bottom: 10px;
 	}
 
 	p.text {
@@ -50,11 +50,7 @@
 		padding: 25px 25px;
 	}
 
-/*	hr {
-		width: 200px;
-	}*/
-
-	div.menuEl {
+	.menuEl {
 		float: left;
 		overflow: hidden;
 		margin: 0;
@@ -64,19 +60,19 @@
 		height: 350px;
 	}
 
-	div.menuEl img {
+	.menuEl img {
 		width: 100%;
 		margin-top: -120px; 
 	}
 
-	div.hover {
+	.hover {
 		position: absolute;
 		top: 0;
 		width: 100%;
 		opacity: 0;
 	}
 
-	div.hover:hover {
+	.hover:hover {
 		opacity: 1;
 		transition: 0.8s ease;
 	}
@@ -105,45 +101,403 @@
 
 	/* days */
 	
-	div.day {
+	.day {
 		background-color: #fff;
-		width: 96%;
-		height: 750px;
+		width: 100%;
+		height: 900px;
 		position: fixed;
-		top: 25px;
-		left: 2%;
-		right: 2%;
+		top: 0;
+		left: 0;
+		right: 0;
 		color: #000;
-		box-shadow: 0px 0px 120px #000;
+		box-shadow: 0px 0px 200px #000;
 		z-index: 999999;
 	}
 
-	div.dayPic {
+	.dayPic {
 		z-index: 999;
 		float: left;
-		width: 600px;
-		height: 750px;
+		width: 50%;
+		height: 100%;
 		overflow: hidden;
 	}
 
-	div.dayPic img {
-		height: 100%;
+	.dayPic div {
+		width: 100%;
 	}
 
-	div.dayText {
+	.dayPic img {
+		height: 110%;
+	}
+
+	.dayText {
 		margin-left: 40px;
-		max-width: 700px;
+		width: 45%;
 		float: left;
 	}
 
-	h1.h1Day {
+	.h1Day {
 		margin-top: 20px;
 		margin-bottom: 10px;
 		text-align: left;
 	}
 
-	p.back {
+	.back {
 		float: left;
+		font-weight: bold;
+		border: 3px solid #000;
+		padding: 5px;
+		margin-bottom: 35px;
+	}
+
+	.back:hover {
+		color: #e0e0e0;
+	}
+
+	.clear {
+		clear: left;
+		margin-top: 20px;
+	}
+
+}
+
+@media all and (min-width: 481px) {
+
+	body {
+		margin: 0 auto;
+		color: white;
+		font-family: Helvetica;
+		font-weight: lighter;
+	}
+
+	div.top {
+		position: relative;
+		overflow: hidden;
+		height: 700px;
+	}
+
+	img.topPic {
+		width: 100%;
+		position: absolute;
+	}
+
+	div.color {
+		background-color: rgba( 0, 0, 0, 0.5);
+		width: 100%;
+		height: 100%;
+		top: 0;
+		position: absolute; 
+	}
+
+	img.bike {
+		width: 10%;
+		margin-left: 45%;
+		margin-top: 50px;
+	}
+
+	h1 {
+		font-family: 'Slabo 27px', serif;
+		font-size: 70px;
+		text-align: center;
+		margin-top: 30px;
+		margin-bottom: 10px;
+	}
+
+	p.text {
+		width: 20%;
+		margin-top: 30px;
+		margin-left: 38%;
+		text-align: justify;
+		line-height: 25px;
+		border: 3px solid #fff;
+		padding: 25px 25px;
+	}
+
+	.menuEl {
+		float: left;
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		position: relative;
+		width: 50%;
+		height: 350px;
+	}
+
+	.menuEl img {
+		width: 100%;
+		margin-top: -120px; 
+	}
+
+	.hover {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		opacity: 0;
+	}
+
+	.hover:hover {
+		opacity: 1;
+		transition: 0.8s ease;
+	}
+
+	div.black {
+		min-width: 100%;
+		height: 350px;
+		background-color: rgba(0, 0, 0, 0.65);
+		position: absolute;
+		-webkit-backdrop-filter: saturate(180%) blur(20px);
+		backdrop-filter: saturate(180%) blur(20px);
+	}
+
+	div.hoverText {
+		position: absolute;
+		width: 100%;
+		z-index: 1;
+	}
+
+	div.hoverText h1 {
+		padding: 5px 10px;
+		margin: 125px 30px 0 0;
+		float: right;
+		border: 3px solid #fff;
+	}
+
+	/* days */
+	
+	.day {
+		background-color: #fff;
+		width: 100%;
+		height: 900px;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		color: #000;
+		box-shadow: 0px 0px 200px #000;
+		z-index: 999999;
+	}
+
+	.dayPic {
+		z-index: 999;
+		float: left;
+		width: 50%;
+		height: 100%;
+		overflow: hidden;
+	}
+
+	.dayPic div {
+		width: 100%;
+	}
+
+	.dayPic img {
+		height: 110%;
+	}
+
+	.dayText {
+		margin-left: 40px;
+		width: 45%;
+		float: left;
+	}
+
+	.h1Day {
+		margin-top: 20px;
+		margin-bottom: 10px;
+		text-align: left;
+	}
+
+	.back {
+		float: left;
+		font-weight: bold;
+		border: 3px solid #000;
+		padding: 5px;
+		margin-bottom: 35px;
+	}
+
+	.back:hover {
+		color: #e0e0e0;
+	}
+
+	.clear {
+		clear: left;
+		margin-top: 20px;
+	}
+
+} 
+
+@media all and (max-width: 480px) {
+
+	body {
+		margin: 0 auto;
+		color: white;
+		font-family: Helvetica;
+		font-weight: lighter;
+	}
+
+	div.top {
+		position: relative;
+		overflow: hidden;
+		height: 700px;
+	}
+
+	img.topPic {
+		height: 100%;
+		position: absolute;
+	}
+
+	div.color {
+		background-color: rgba( 0, 0, 0, 0.5);
+		width: 100%;
+		height: 100%;
+		top: 0;
+		position: absolute; 
+	}
+
+	img.bike {
+		width: 20%;
+		margin-left: 40%;
+		margin-top: 50px;
+	}
+
+	h1 {
+		font-family: 'Slabo 27px', serif;
+		font-size: 40px;
+		text-align: center;
+		margin-top: 30px;
+		margin-bottom: 10px;
+	}
+
+	p.text {
+		width: 90%;
+		margin-left: 5%;
+		margin-top: 70px;
+		font-size: 20px;
+		line-height: 25px;
+		text-align: justify;
+	}
+
+	.menuEl {
+		float: left;
+		clear: left;
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		position: relative;
+		width: 100%;
+		height: 300px;
+	}
+
+	.menuEl img {
+		width: 110%;
+		margin-top: -120px; 
+	}
+
+	.hover {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		opacity: 0;
+	}
+
+	.hover:hover {
+		opacity: 1;
+		transition: 0.8s ease;
+	}
+
+	div.black {
+		min-width: 100%;
+		height: 350px;
+		background-color: rgba(0, 0, 0, 0.65);
+		position: absolute;
+		-webkit-backdrop-filter: saturate(180%) blur(20px);
+		backdrop-filter: saturate(180%) blur(20px);
+	}
+
+	div.hoverText {
+		position: absolute;
+		width: 100%;
+		z-index: 1;
+	}
+
+	div.hoverText h1 {
+		padding: 5px 10px;
+		margin: 125px 30px 0 0;
+		float: right;
+		border: 3px solid #fff;
+	}
+
+	/* days */
+	
+	.day {
+		background-color: #fff;
+		width: 100%;
+		height: 250px;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		color: #000;
+		z-index: 999999;
+	}
+
+	.dayPic {
+		z-index: 999;
+		float: left;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+	}
+
+	.dayPic div {
+		width: 100%;
+	}
+
+	.dayPic img {
+		width: 110%;
+	}
+
+	.dayText {
+		background-color: #fff;
+		padding-left: 5%;
+		padding-right: 5%;
+		padding-bottom: 200px;
+		width: 90%;
+		float: left;
+		clear: left;
+	}
+
+	.h1Day {
+		margin-top: -50px;
+		color: white;
+		margin-bottom: 5px;
+		text-align: left;
+	}
+
+	.dayText h2 {
+		margin-top: 5px;
+		margin-bottom: -10px;
+	}
+
+	.back {
+		float: left;
+		font-weight: bold;
+		border: 3px solid #000;
+		padding: 5px;
+		margin-bottom: 10px;
+	}
+
+	.back:hover {
+		color: #e0e0e0;
+	}
+
+	.clear {
+		clear: left;
+		margin-top: 20px;
+	}
+
+	.scroll {
+		width: 100%;
+		height: 300px;
+		overflow-y: auto;
 	}
 
 } 
