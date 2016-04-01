@@ -4,6 +4,7 @@ $(document).ready(function(){
 	$("#dayTwoPop").hide(0);
 	$("#dayThreePop").hide(0);
 	$("#dayFourPop").hide(0);
+	$("#dayFivePop").hide(0);
 
 // DAY ONE
 
@@ -96,7 +97,7 @@ $(document).ready(function(){
 	
 	});
 
-// DAY Four
+// DAY FOUR
 
 	$("#dayFour").click(function(){
 
@@ -125,5 +126,35 @@ $(document).ready(function(){
 		});
 	
 	});
+
+// DAY FIVE
+
+	$("#dayFive").click(function(){
+
+		$("#dayFivePop").fadeIn(800);
+
+		function changeImg5(selector, image) {
+			selector.attr("src", "imgs/day4/" + image + ".jpg");
+		}
+
+		var sel = $("#dayFiveImg");
+		var images = ["1", "2", "3", "4", "5"];
+		var i = 0;
+
+		var intervalId = setInterval(function(){
+			changeImg5(sel, images[i]);
+			if (i == 4) {
+				i = 0;
+			} else {
+				i++;
+			}
+		}, 5000);
+
+		$("#dayFiveHide").click(function(){
+			clearInterval(intervalId);
+			$("#dayFivePop").fadeOut(800);
+		});
+	
+	});	
 
 });
