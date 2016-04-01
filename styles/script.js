@@ -5,6 +5,7 @@ $(document).ready(function(){
 	$("#dayThreePop").hide(0);
 	$("#dayFourPop").hide(0);
 	$("#dayFivePop").hide(0);
+	$("#daySixPop").hide(0);
 
 // DAY ONE
 
@@ -134,7 +135,7 @@ $(document).ready(function(){
 		$("#dayFivePop").fadeIn(800);
 
 		function changeImg5(selector, image) {
-			selector.attr("src", "imgs/day4/" + image + ".jpg");
+			selector.attr("src", "imgs/day5/" + image + ".jpg");
 		}
 
 		var sel = $("#dayFiveImg");
@@ -155,6 +156,36 @@ $(document).ready(function(){
 			$("#dayFivePop").fadeOut(800);
 		});
 	
-	});	
+	});
+
+// DAY SIX
+
+	$("#daySix").click(function(){
+
+		$("#daySixPop").fadeIn(800);
+
+		function changeImg6(selector, image) {
+			selector.attr("src", "imgs/day6/" + image + ".jpg");
+		}
+
+		var sel = $("#daySixImg");
+		var images = ["1", "2", "3", "4", "5"];
+		var i = 0;
+
+		var intervalId = setInterval(function(){
+			changeImg6(sel, images[i]);
+			if (i == 4) {
+				i = 0;
+			} else {
+				i++;
+			}
+		}, 5000);
+
+		$("#daySixHide").click(function(){
+			clearInterval(intervalId);
+			$("#daySixPop").fadeOut(800);
+		});
+	
+	});		
 
 });
